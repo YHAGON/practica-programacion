@@ -6,7 +6,7 @@
   .body {
     background-color: #29292c;
     color: rgb(191, 238, 184);
-    font-family:var(--primary-font-family);
+    font-family: var(--primary-font-family);
     margin: 0;
   }
   
@@ -40,6 +40,19 @@
     width: 108px;
     height: 32px;
   }
+
+  .icon {
+    color: #fff;
+    font-size: 1.75rem;
+  }
+  
+  .menu-checkbox {
+    display: none;
+  }
+  
+  .menu-checkbox:checked+.menu--hamburger {
+    left: 0;
+  }
   
   .header-nav__menu-list {
     display: flex;
@@ -47,6 +60,21 @@
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+
+  .menu--hamburger{
+    position: fixed;
+    top: 4rem;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-image: linear-gradient(#20232ae0, #282c34de);
+    transition: left 0.25s;
   }
   
   .header-nav__menu-link {
@@ -82,6 +110,19 @@
    .header-nav__container{
     max-width: 1024px;
    }
+
+   .icon{
+    display: none;
+   }
+
+  .menu--hamburger{
+    position: static;
+    flex-direction: row;
+    gap: 1rem;
+    width: auto;
+    background-image: none;
+   }
+
   }
   
   @keyframes spin {

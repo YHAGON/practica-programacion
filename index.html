@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="./css/index.css" />
 
  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
 <title>WOLF DESARROLLADORES</title>
 <meta name="title" content="WOLF DESARROLLADORES" />
@@ -20,17 +21,20 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yhagon.github.io/practica-programacion/" />
 <meta property="og:title" content="WOLF DESARROLLADORES" />
-<meta property="og:description" content="Somos la mejor opción para el desarrollo de tu página o aplicativo web.">
-<meta property="og:image" content="https://opengraph.githubassets.com/5d1049873c5f8faee6e69e5a0288eaed66dcfbefc939cd24d601e98eba210ef4/YHAGON/practica-programacion" />
+<meta property="og:description"
+ content="Somos la mejor opción para el desarrollo de tu página o aplicativo web.">
+<meta property="og:image"
+ content="https://opengraph.githubassets.com/5d1049873c5f8faee6e69e5a0288eaed66dcfbefc939cd24d601e98eba210ef4/YHAGON/practica-programacion" />
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content="https://yhagon.github.io/practica-programacion/" />
 <meta property="twitter:title" content="WOLF DESARROLLADORES" />
-<meta property="twitter:description" content="Somos la mejor opción para el desarrollo de tu página o aplicativo web." />
-<meta property="twitter:image" content="https://opengraph.githubassets.com/5d1049873c5f8faee6e69e5a0288eaed66dcfbefc939cd24d601e98eba210ef4/YHAGON/practica-programacion" />
+<meta property="twitter:description" 
+content="Somos la mejor opción para el desarrollo de tu página o aplicativo web." />
+<meta property="twitter:image"
+ content="https://opengraph.githubassets.com/5d1049873c5f8faee6e69e5a0288eaed66dcfbefc939cd24d601e98eba210ef4/YHAGON/practica-programacion" />
 
 </head>
-
 
 <body class="body">
     <header class="header">
@@ -40,7 +44,9 @@
             <img src="./assets/img/logo_bolo.jpg" alt="logo lobo" width="108" height="32" 
             class="header-nav__link-logo" />
           </a>
-          <ul class="header-nav__menu-list">
+          <label for="menu" class="icon"><i class="bi bi-list"></i></label>
+          <input type="checkbox" id="menu" class="menu-checkbox" />
+          <ul class="header-nav__menu-list menu--hamburger">
             <li>
               <a href="#iExperience" class="header-nav__menu-link">Experiencia</a>
             </li> 
@@ -55,6 +61,7 @@
         </div>
       </nav>
     </header>
+    <main>
       <article class="i-hero" id="iHero">
         <div class="i-hero__container">
           <div class="i-hero__info-container">
@@ -67,11 +74,13 @@
             <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" class="button button--primary">¡Aprender gratis!</a>
           </div>
           <div class="i-hero__img-container">
-              <img src="./assets/img/FB_IMG_1570978481413.jpg" alt="Yhancarlos Gonzales" width="256" height="256" class="i-hero__img-pro" />
+              <img src="./assets/img/FB_IMG_1570978481413.jpg" alt="Yhancarlos Gonzales" width="256" height="256" 
+              class="i-hero__img-pro" />
               <figure class="i-hero__img-tech-container">
                 <img src="./assets/svg/logo-html-5.svg" alt="HTML" width="64" height="64" class="i-hero__img-tech" />
                 <img src="./assets/svg/logo-css-3.svg" alt="CSS" width="64" height="64" class="i-hero__img-tech" />
-                <img src="./assets/svg/logo-javascript.svg" alt="JavaScript" width="64" height="64" class="i-hero__img-tech" />
+                <img src="./assets/svg/logo-javascript.svg" alt="JavaScript" width="64" height="64" 
+                  class="i-hero__img-tech" />
                 <img src="./assets/svg/logo-react.svg" alt="React" width="64" height="64" class="i-hero__img-tech" />
               </figure>
             </div>
@@ -92,30 +101,32 @@
               <h4 class="card-exp__period">Julio 2021, presente</h4>
               <h3 class="card-exp__company">Odrespac</h3>
               <h4 class="card-exp__role">Frontend Developer</h4>
-                  <ul class="card-exp__activities">
-                    <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
-                    <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
+              <ul class="card-exp__activities">
+                    <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y 
+                      aplicando Scrum.</li>
+                    <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando 
+                      tecnologías modernas.</li>
                   </ul>
                  </div>
                <div class="card-exp">   
               <h4 class="card-exp__period">septiembre 2021, presente</h4>
               <h3 class="card-exp__company">Ingetecc</h3>
               <h4 class="card-exp__role">Trainer Frontend</h4>
-                      <ul class="card-exp__activities">
-                        <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
-                        <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
-                      </ul>
-                  </div>
-                  <div class="card-exp">  
+              <ul class="card-exp__activities">
+                    <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
+                    <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
+               </ul>
+              </div>
+            <div class="card-exp">  
                 <h4 class="card-exp__period">septiembre 2021, presente</h4>
                 <h3 class="card-exp__company">DRIVEN</h3>
                 <h4 class="card-exp__role">Trainer Frontend</h4>
                 <ul class="card-exp__activities">
-                            <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
-                            <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
-                          </ul>     
-                    </div>
-                  </div>
+                  <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
+                  <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
+                </ul>     
+          </div>
+        </div>
                   <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" class="button button--primary">Ver más experiencias</a>
                   <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" class="button button--primary">Ver más experiencias</a>
                   <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" class="button button--primary">Ver más experiencias</a>
@@ -169,14 +180,15 @@
               </a>
             </li>
             <li>
-              <a href="https://xiaomiperu.com//" class="menu__link">
+              <a href="https://xiaomiperu.com//">
                 <img src="./assets/svg/logo-internet.svg" alt="Web" width="32" height="32" class="menu__img" />
               </a>
             </li>
           </ul>
           <h2 class="section__footer-title">
             🐺Copyright &copy; 2022
-            <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" target="_blank" rel="noopener noreferrer" class="section__footer-link">
+            <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" target="_blank" rel="noopener noreferrer" 
+               class="section__footer-link">
               Yhancarlos Gonzales
             </a>
             Todos los derechos reservados.🐺
