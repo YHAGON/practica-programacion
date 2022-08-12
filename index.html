@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/img/22217wolfface_98825.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/g17css.css" />
 
  <link rel="preconnect" href="https://fonts.googleapis.com" />
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +17,8 @@
 
 <title>WOLF DESARROLLADORES</title>
 <meta name="title" content="WOLF DESARROLLADORES" />
-<meta name="description" content="Somos la mejor opción para el desarrollo de tu página o aplicativo web." />
+<meta name="description" 
+content="Somos la mejor opción para el desarrollo de tu página o aplicativo web." />
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://yhagon.github.io/practica-programacion/" />
@@ -37,16 +39,16 @@ content="Somos la mejor opción para el desarrollo de tu página o aplicativo we
 </head>
 
 <body class="body">
-    <header class="header">
-      <nav class="header-nav">
-        <div class="header-nav__container">
-          <a href="#iHero" class="header-nav__link-logo-container">
+    <header class="header section--headed">
+      <nav class="nav">
+        <div class="container container--headed">
+          <a href="#iHero">
             <img src="./assets/img/logo_bolo.jpg" alt="logo lobo" width="108" height="32" 
-            class="header-nav__link-logo" />
+            class="nav__link-logo" />
           </a>
-          <label for="menu" class="icon"><i class="bi bi-list"></i></label>
+          <label for="menu" class="menu-icon"><i class="bi bi-list"></i></label>
           <input type="checkbox" id="menu" class="menu-checkbox" />
-          <ul class="header-nav__menu-list menu--hamburger">
+          <ul class="menu menu--hamburger">
             <li>
               <a href="#iExperience" class="header-nav__menu-link">Experiencia</a>
             </li> 
@@ -55,33 +57,33 @@ content="Somos la mejor opción para el desarrollo de tu página o aplicativo we
             </li>
             <li>
               <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" target="_blank" rel="noopener noreferrer"
-                class="header-nav__menu-link header-nav__menu-link--active">Yhancarlos</a>
+              class="menu__link menu__link--active">Yhancarlos</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <article class="i-hero" id="iHero">
-        <div class="i-hero__container">
-          <div class="i-hero__info-container">
-            <h1 class="i-hero__info-title">WOLF DESARROLLADORES</h1>
-            <h2 class="i-hero__info-subtitle">Los mejores diseños y desarrollos de páginas web en el Perú</h2>
-            <p class="i-hero__info-paragraph">
+      <article class="hero" id="iHero">
+        <div class="container container--hero">
+          <div class="card card--hero">
+            <h1 class="card__title card__title--hero">WOLF DESARROLLADORES</h1>
+            <h2 class="card__subtitle card__subtitle--hero">Los mejores diseños y desarrollos de páginas web en el Perú</h2>
+            <p class="card__paragraph card__paragraph--hero">
               Somos el mejor lugar donde puedes aprender sobre desarrollo web frontend. Asimismo, con Base 2 by Web 4B
               puedes hacer realidad ese sueño que tienes en mente. ¡Cambia tu vida!
             </p>
             <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" class="button button--primary">¡Aprender gratis!</a>
           </div>
-          <div class="i-hero__img-container">
+          <div class="hero__img-container">
               <img src="./assets/img/FB_IMG_1570978481413.jpg" alt="Yhancarlos Gonzales" width="256" height="256" 
-              class="i-hero__img-pro" />
-              <figure class="i-hero__img-tech-container">
-                <img src="./assets/svg/logo-html-5.svg" alt="HTML" width="64" height="64" class="i-hero__img-tech" />
-                <img src="./assets/svg/logo-css-3.svg" alt="CSS" width="64" height="64" class="i-hero__img-tech" />
+              class="hero__img-pro" />
+              <figure class="hero__img-tech-container">
+                <img src="./assets/svg/logo-html-5.svg" alt="HTML" width="64" height="64" class="hero__img-tech" />
+                <img src="./assets/svg/logo-css-3.svg" alt="CSS" width="64" height="64" class="hero__img-tech" />
                 <img src="./assets/svg/logo-javascript.svg" alt="JavaScript" width="64" height="64" 
-                  class="i-hero__img-tech" />
-                <img src="./assets/svg/logo-react.svg" alt="React" width="64" height="64" class="i-hero__img-tech" />
+                  class="hero__img-tech" />
+                <img src="./assets/svg/logo-react.svg" alt="React" width="64" height="64" class="hero__img-tech" />
               </figure>
             </div>
           </div>
@@ -97,33 +99,33 @@ content="Somos la mejor opción para el desarrollo de tu página o aplicativo we
         <div class="container container--elements">
           <h2 class="section__title">🐺🐺Experiencia🐺🐺</h2>
           <div class="section__cards">
-            <div class="card-exp">
-              <h4 class="card-exp__period">Julio 2021, presente</h4>
-              <h3 class="card-exp__company">Odrespac</h3>
-              <h4 class="card-exp__role">Frontend Developer</h4>
-              <ul class="card-exp__activities">
-                    <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y 
+            <div class="card card--exp">
+              <h4 class="card__subtitle card__subtitle--exp">Julio 2021, presente</h4>
+              <h3 class="card__title">Odrespac</h3>
+              <h4 class="card__subtitle card__subtitle--exp">Frontend Developer</h4>
+              <ul class="card__list">
+                    <li class="card__item">Desarrollo de aplicaciones con React y Redux basándome en un Figma y 
                       aplicando Scrum.</li>
-                    <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando 
+                    <li class="card__item">Investigación, optimización, mantenimiento y presentación aplicando 
                       tecnologías modernas.</li>
                   </ul>
                  </div>
-               <div class="card-exp">   
-              <h4 class="card-exp__period">septiembre 2021, presente</h4>
-              <h3 class="card-exp__company">Ingetecc</h3>
-              <h4 class="card-exp__role">Trainer Frontend</h4>
-              <ul class="card-exp__activities">
-                    <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
-                    <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
+               <div class="card card-exp">   
+              <h4 class="card__subtitle card__subtitle--exp">septiembre 2021, presente</h4>
+              <h3 class="card__title">Ingetecc</h3>
+              <h4 class="card__subtitle card__subtitle--exp">Trainer Frontend</h4>
+              <ul class="card__list">
+                    <li class="card__item">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
+                    <li class="card__item">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
                </ul>
               </div>
-            <div class="card-exp">  
-                <h4 class="card-exp__period">septiembre 2021, presente</h4>
-                <h3 class="card-exp__company">DRIVEN</h3>
-                <h4 class="card-exp__role">Trainer Frontend</h4>
-                <ul class="card-exp__activities">
-                  <li class="card-exp__activity">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
-                  <li class="card-exp__activity">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
+            <div class="card card-exp">  
+                <h4 class="card__subtitle card__subtitle--exp">septiembre 2021, presente</h4>
+                <h3 class="card__title">DRIVEN</h3>
+                <h4 class="card__subtitle card__subtitle--exp">Trainer Frontend</h4>
+                <ul class="card__list">
+                  <li class="card__item">Desarrollo de aplicaciones con React y Redux basándome en un Figma y aplicando Scrum.</li>
+                  <li class="card__item">Investigación, optimización, mantenimiento y presentación aplicando tecnologías modernas.</li>
                 </ul>     
           </div>
         </div>
@@ -151,8 +153,9 @@ content="Somos la mejor opción para el desarrollo de tu página o aplicativo we
       </section>
     </main>
     <footer>
-      <nav class="section section--headed">
-        <div class="container container--elements">
+      <nav class="section--headed">
+        <div class="nav">
+          <div class="container container--elements"></div>
           <ul class="menu">
             <li>
               <a href="https://www.youtube.com/channel/UC41xH9LokStfjrC3q_5l26A">
@@ -185,10 +188,10 @@ content="Somos la mejor opción para el desarrollo de tu página o aplicativo we
               </a>
             </li>
           </ul>
-          <h2 class="section__footer-title">
+          <h2 class="footer__title">
             🐺Copyright &copy; 2022
             <a href="https://www.linkedin.com/in/yhancarlos-gonzales/" target="_blank" rel="noopener noreferrer" 
-               class="section__footer-link">
+               class="footer__link">
               Yhancarlos Gonzales
             </a>
             Todos los derechos reservados.🐺
