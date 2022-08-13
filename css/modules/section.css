@@ -1,5 +1,5 @@
 .section {
-    padding: 1.5rem 0;
+    padding: var(--padding-section);
   }
   
   .section--secondary {
@@ -7,13 +7,13 @@
   }
   
   .section--headed {
-    box-shadow: 0 0 0.0625rem 0.0625rem #fff8;
+    box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
   }
   
   .container {
-    max-width: 640px;
+    max-width: var(--max-width-container);
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: var(--padding-container);
   }
   
   .container--headed {
@@ -50,14 +50,6 @@
   }
   
   @media (min-width: 768px) {
-    .section {
-      padding: 2rem 0;
-    }
-  
-    .container {
-      max-width: 1024px;
-    }
-  
     .container--hero {
       grid-template-columns: repeat(2, 1fr);
     }

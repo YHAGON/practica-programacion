@@ -3,8 +3,10 @@
   --primary-theme-color: #20232a;
   --secondary-theme-color: #282c34;
   --primary-text-color: #fff;
+  --secondary-text-color:#eee;
   --reverse-primary-text-color: #000;
   --primary-shadow-color: #20232a80;
+  
   --primary-highlight-color: #61dafb;
   --secondary-highlight-color: rgb(255, 217, 0);
   --primary-button-color: #61dafb;
